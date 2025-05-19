@@ -63,8 +63,8 @@ function About() {
                                 dans ce domaine en constante évolution. Je suis toujours à la recherche de 
                                 nouvelles opportunités pour collaborer avec d'autres professionnels et partager 
                                 mes connaissances.
-                            </p>
-                        </div>
+            </p>
+        </div>
                         <p><strong>“Le code est mon outil, la résolution de problèmes est ma mission.”</strong></p>
                         <div className="about-cta">
                             <p>

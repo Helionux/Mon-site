@@ -3,7 +3,7 @@ import React from "react";
 import Banner from "../components/Banner/Banner";
 import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
-import Testimonials from "../components/Testimonials/Testimonials";
+// import Testimonials from "../components/Testimonials/Testimonials";
 import Stats from "../components/Stats/Stats";
 import About from "../components/Abouts/About";
 import "./styles/Accueil.css";
@@ -17,7 +17,7 @@ function Accueil() {
         <a href="#skills" className="nav-link">Compétences</a>
         <a href="#stats" className="nav-link">Statistiques</a>
         <a href="#projects" className="nav-link">Projets</a>
-        <a href="#testimonials" className="nav-link">Témoignages</a>
+        {/* <a href="#testimonials" className="nav-link">Témoignages</a> */}
       </div>
       <section id="about">
         <About />
@@ -31,9 +31,9 @@ function Accueil() {
       <section id="projects">
         <Projects />
       </section>
-      <section id="testimonials">
+      {/* <section id="testimonials">
         <Testimonials />
-      </section>
+      </section> */}
     </div>
   );
 }

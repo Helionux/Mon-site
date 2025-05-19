@@ -1,11 +1,8 @@
 .banner-container {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     position: relative;
     overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .banner-container::before {
@@ -17,12 +14,7 @@
     height: 100%;
     background: linear-gradient(45deg, rgba(9, 132, 227, 0.1) 0%, rgba(9, 132, 227, 0) 100%);
     animation: gradientAnimation 15s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    z-index: 1;
 }
 
 .hero {
@@ -30,7 +22,12 @@
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
 .hero-content {
@@ -41,24 +38,14 @@
     animation: fadeIn 1s ease-out;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 .hero-left {
     flex: 1;
     animation: slideInLeft 1s ease-out;
 }
 
-@keyframes slideInLeft {
-    from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
 .profile-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
@@ -90,50 +77,20 @@
     animation: slideInRight 1s ease-out;
 }
 
-@keyframes slideInRight {
-    from { opacity: 0; transform: translateX(50px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
 .hero-text {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #2d3436;
     position: relative;
     display: inline-block;
 }
 
-.hero-text::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #0984e3;
-    transition: width 0.5s ease;
-}
-
-.hero-text:hover::after {
-    width: 100%;
-}
-
-.hero-text span {
+.hero-subtitle {
+    font-size: 1.8rem;
     color: #0984e3;
-    position: relative;
-}
-
-.hero-text span::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background-color: rgba(9, 132, 227, 0.1);
-    z-index: -1;
-    transform: skewX(-15deg);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
 .hero-description {
@@ -141,16 +98,12 @@
     line-height: 1.6;
     color: #636e72;
     margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeIn 1s ease-out 0.5s forwards;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeIn 1s ease-out 0.7s forwards;
 }
 
 .btn {
@@ -208,15 +161,12 @@
 .social-links {
     display: flex;
     gap: 1.5rem;
-    opacity: 0;
-    animation: fadeIn 1s ease-out 0.9s forwards;
 }
 
 .social-links a {
     color: #2d3436;
     font-size: 1.5rem;
     transition: all 0.3s ease;
-    position: relative;
 }
 
 .social-links a::before {
@@ -239,11 +189,38 @@
     width: 100%;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
 @media (max-width: 768px) {
+    .banner-container {
+        padding-top: 80px;
+    }
+
+    .hero {
+        height: calc(100vh - 80px);
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
+    }
+
+    .profile-image {
+        max-width: 250px;
     }
 
     .hero-buttons {
@@ -258,8 +235,7 @@
         font-size: 2.5rem;
     }
 
-    .hero-text::after {
-        left: 50%;
-        transform: translateX(-50%);
+    .hero-subtitle {
+        font-size: 1.5rem;
     }
 }

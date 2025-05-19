@@ -17,18 +17,6 @@ function Services() {
     },
     {
       id: 2,
-      icon: "fas fa-mobile-alt",
-      title: "Applications Mobiles",
-      description: "Développement d'applications mobiles natives et cross-platform pour iOS et Android.",
-      features: [
-        "Applications natives",
-        "Applications hybrides",
-        "PWA",
-        "Maintenance"
-      ]
-    },
-    {
-      id: 3,
       icon: "fas fa-paint-brush",
       title: "UI/UX Design",
       description: "Conception d'interfaces utilisateur modernes et expériences utilisateur optimales.",
@@ -39,18 +27,7 @@ function Services() {
         "Tests utilisateurs"
       ]
     },
-    {
-      id: 4,
-      icon: "fas fa-server",
-      title: "Backend & API",
-      description: "Développement de solutions backend robustes et sécurisées avec des API RESTful.",
-      features: [
-        "API REST",
-        "Bases de données",
-        "Authentification",
-        "Sécurité"
-      ]
-    }
+    
   ];
 
   return (

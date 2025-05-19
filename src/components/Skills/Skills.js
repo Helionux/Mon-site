@@ -8,18 +8,8 @@ function Skills() {
       items: [
         { name: "HTML5", level: 90 },
         { name: "CSS3", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "React", level: 85 },
-        { name: "Bootstrap", level: 90 }
-      ],
-    },
-    {
-      category: "Backend",
-      items: [
-        { name: "Node.js", level: 75 },
-        { name: "Express", level: 70 },
-        { name: "MongoDB", level: 65 },
-        { name: "SQL", level: 60 }
+        { name: "JavaScript", level: 75 },
+        { name: "React", level: 65 },
       ],
     },
     {
@@ -27,6 +17,7 @@ function Skills() {
       items: [
         { name: "Git", level: 85 },
         { name: "VS Code", level: 90 },
+        { name: "Cursor", level: 90 },
         { name: "Figma", level: 75 },
         { name: "Photoshop", level: 70 }
       ]

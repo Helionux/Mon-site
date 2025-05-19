@@ -28,13 +28,13 @@ const Footers = () => {
           <p>Email: deouleallahh@gmail.com</p>
           <p>Téléphone: (+235) 62 13 83 52</p>
           <div className="social-links">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className='fab-foot'>
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className='fab-foot'>
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className='fab-foot'>
               <i className="fab fa-twitter"></i>
             </a>
           </div>

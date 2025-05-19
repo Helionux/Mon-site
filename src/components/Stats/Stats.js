@@ -4,14 +4,12 @@ import "./Stats.css";
 function Stats() {
   const [stats, setStats] = useState([
     { id: 1, number: 0, label: "Projets Réalisés", icon: "fas fa-project-diagram" },
-    { id: 2, number: 0, label: "Clients Satisfaits", icon: "fas fa-smile" },
-    { id: 3, number: 0, label: "Années d'Expérience", icon: "fas fa-clock" },
     { id: 4, number: 0, label: "Technologies Maîtrisées", icon: "fas fa-code" }
   ]);
 
   useEffect(() => {
-    const targetNumbers = [50, 30, 3, 15];
-    const duration = 2000; // 2 seconds
+    const targetNumbers = [5, 5];
+    const duration = 20000; // 2 milliseconds
     const steps = 50;
     const stepDuration = duration / steps;
 
@@ -34,10 +32,11 @@ function Stats() {
     }, stepDuration);
 
     return () => clearInterval(interval);
-  }, []); // targetNumbers est maintenant à l'intérieur du useEffect
+  }, []);
 
   return (
     <section className="stats-section">
+        <h2>Stats</h2>
       <div className="container">
         <div className="stats-grid">
           {stats.map(stat => (

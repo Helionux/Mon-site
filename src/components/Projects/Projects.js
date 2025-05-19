@@ -7,21 +7,23 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
+      title: "Gestion des queux d'attentes",
       description: "Une plateforme e-commerce complète avec panier d'achat et paiement en ligne.",
       image: "https://via.placeholder.com/400x300",
       category: "web",
       technologies: ["React", "Node.js", "MongoDB"],
-      link: "#"
+      link: "#",
+      status: "En cours"
     },
     {
       id: 2,
-      title: "Application de Gestion",
-      description: "Application de gestion des tâches et des projets pour les équipes.",
+      title: "Application de Gestion de Stock",
+      description: "Application de gestion des Stock pour faciliter le contrôle sur les entrées et sorties des produits.",
       image: "https://via.placeholder.com/400x300",
-      category: "app",
-      technologies: ["React Native", "Firebase"],
-      link: "#"
+      category: "web",
+      technologies: ["React", "MongoDB"],
+      link: "#",
+      status: "Terminé"
     },
     {
       id: 3,
@@ -30,16 +32,8 @@ function Projects() {
       image: "https://via.placeholder.com/400x300",
       category: "web",
       technologies: ["React", "CSS3", "JavaScript"],
-      link: "#"
-    },
-    {
-      id: 4,
-      title: "Dashboard Analytics",
-      description: "Tableau de bord analytique avec visualisation de données.",
-      image: "https://via.placeholder.com/400x300",
-      category: "design",
-      technologies: ["React", "D3.js", "Material-UI"],
-      link: "#"
+      link: "#",
+      status: "Terminé"
     }
   ];
 
@@ -89,6 +83,11 @@ function Projects() {
                   {project.technologies.map((tech, index) => (
                     <span key={index} className="technology-tag">{tech}</span>
                   ))}
+                </div>
+                <div className="project-status">
+                  <span className={`status-tag ${project.status === "Terminé" ? "status-completed" : "status-in-progress"}`}>
+                    {project.status}
+                  </span>
                 </div>
               </div>
             </div>
