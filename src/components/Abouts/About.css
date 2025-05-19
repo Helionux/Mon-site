@@ -1,0 +1,145 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 40%;
+    margin: 25px auto;
+    background-color: #ffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 15%;
+}
+
+.about h1 {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.about p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.about-section {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-intro,
+.about-experience,
+.about-passion,
+.about-mission,
+.about-vision,
+.about-philosophy,
+.about-cta {
+    background: #ffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-intro:hover,
+.about-experience:hover,
+.about-passion:hover,
+.about-mission:hover,
+.about-vision:hover,
+.about-philosophy:hover {
+    transform: translateY(-5px);
+}
+
+.about-text h3 {
+    color: #2d3436;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.about-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #0984e3;
+}
+
+.about-text p {
+    color: #636e72;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.about-text strong {
+    color: #2d3436;
+}
+
+.about-cta {
+    text-align: center;
+    background: #0984e3;
+    color: white;
+}
+
+.about-cta p {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: white;
+    color: #0984e3;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .about-content {
+        padding: 1rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+}
+
