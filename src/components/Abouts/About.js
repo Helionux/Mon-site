@@ -71,7 +71,7 @@ function About() {
                                 N'hésitez pas à me contacter si vous souhaitez discuter de projets, 
                                 d'opportunités de collaboration ou simplement échanger des idées.
                             </p>
-                            <a href="#contact" className="cta-button">Me Contacter</a>
+                            <a href="/contact" className="cta-button">Me Contacter</a>
                         </div>
                     </div>
                 </div>
