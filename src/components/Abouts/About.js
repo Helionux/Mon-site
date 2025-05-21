@@ -12,7 +12,7 @@ function About() {
                             <h3>Qui suis-je ?</h3>
                             <p>
                                 Bonjour, je suis <strong>Deoule-Allah Madjitoloum Heliodore</strong>, 
-                                Développeur Web Fullstack & UI/UX Designer en formation. 
+                                Développeur Web Frontend & UI/UX Designer en formation. 
                                 Basé à N'Djamena, Tchad. Je suis passionné par la création de sites Web 
                                 et d'applications qui offrent une expérience utilisateur exceptionnelle.
                             </p>
@@ -21,7 +21,7 @@ function About() {
                         <div className="about-experience">
                             <h3>Mon Parcours</h3>
                             <p>
-                                Je suis actuellement en formation pour devenir un développeur web fullstack 
+                                Je suis actuellement en formation pour devenir un développeur web Frontend 
                                 et un designer UI/UX. J'ai acquis des compétences solides dans le développement 
                                 front-end et back-end, ainsi que dans la conception d'interfaces utilisateur 
                                 attrayantes et fonctionnelles.
@@ -50,7 +50,7 @@ function About() {
                         <div className='about-vision'>
                             <h3>Ma Vision</h3>
                             <p>
-                                Je veux devenir un développeur Fullstack reconnu, capable de créer, vendre et
+                                Je veux devenir un développeur Frontend reconnu, capable de créer, vendre et
                                 maintenir des solutions digitales à forte valeur ajoutée pour transformer
                                 l’écosystème tech local.
                             </p>

@@ -34,6 +34,16 @@ function Projects() {
       technologies: ["React", "CSS3", "JavaScript"],
       link: "#",
       status: "Terminé"
+    },
+    {
+      id: 4,
+      title: "Get-NDjam",
+      description: "Une platforme de visite qui présente la ville de N'djamena-Tchad dans sa beautés et permet également de facilité une vie attirante pour le tourisme.",
+      image: "https://via.placeholder.com/400x300",
+      category: "web",
+      technologies: ["React", "CSS3", "JavaScript"],
+      link: "#",
+      status: "En Cours"
     }
   ];
 

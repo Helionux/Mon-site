@@ -9,7 +9,7 @@ const Footers = () => {
         <div className="footer-section">
           <h3>À propos</h3>
           <p>
-            Développeur Web Fullstack & UI/UX Designer passionné par la création
+            Développeur Web Frontend & UI/UX Designer passionné par la création
             d'expériences web exceptionnelles.
           </p>
         </div>

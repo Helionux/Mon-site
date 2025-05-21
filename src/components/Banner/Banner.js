@@ -14,7 +14,7 @@ function Banner() {
             <h1 className="hero-text">
               HelioNux
             </h1>
-            <h2 className="hero-subtitle">Développeur Web Fullstack & UI/UX Designer</h2>
+            <h2 className="hero-subtitle">Développeur Web Frontend & UI/UX Designer</h2>
             <p className="hero-description">
               Création de solutions web innovantes et performantes
             </p>
