@@ -7,8 +7,8 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Gestion des queux d'attentes",
-      description: "Une plateforme e-commerce complète avec panier d'achat et paiement en ligne.",
+      title: "Smart Queue",
+      description: "Une plateforme qui permet la gestion des queues d'attentes et des réservations avec des tickets.",
       image: "https://via.placeholder.com/400x300",
       category: "web",
       technologies: ["React", "Node.js", "MongoDB"],

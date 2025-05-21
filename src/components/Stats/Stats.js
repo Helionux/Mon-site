@@ -8,7 +8,7 @@ function Stats() {
   ]);
 
   useEffect(() => {
-    const targetNumbers = [5, 5];
+    const targetNumbers = [3, 5];
     const duration = 20000; // 2 milliseconds
     const steps = 50;
     const stepDuration = duration / steps;
