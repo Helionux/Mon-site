@@ -26,7 +26,8 @@ const Footers = () => {
         <div className="footer-section">
           <h3>Contact</h3>
           <p>Email: deouleallahh@gmail.com</p>
-          <p>Téléphone: (+235) 62 13 83 52 / 694 33 60 74</p>
+          <p>Téléphone: (+235) 62 13 83 52</p>
+          <p>Whatsapp: (+237) 694 33 60 74</p>
           <div className="social-links">
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className='fab-foot'>
               <i className="fab fa-github"></i>

@@ -1,16 +1,17 @@
 .navbar {
   position: fixed;
+  color: #eaf2d7;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background: transparent;
+  background: #14213d;
   transition: all 0.3s ease;
   z-index: 1000;
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: #14213d;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
 }
@@ -26,7 +27,7 @@
 .navbar-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #2d3436;
+  color: #eaf2d7;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -49,10 +50,11 @@
 
 .nav-item {
   position: relative;
+  color:#eaf2d7;
 }
 
 .nav-link {
-  color: #2d3436;
+  color: #eaf2d7;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
@@ -82,7 +84,7 @@
 .menu-icon {
   display: none;
   font-size: 1.5rem;
-  color: #2d3436;
+  color: #eaf2d7;
   cursor: pointer;
   transition: all 0.3s ease;
 }

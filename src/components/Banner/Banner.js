@@ -1,15 +1,12 @@
 import React from "react";
 import "./Banner.css";
-import image from "../../assets/images/IMG-20241225-WA0041.jpg";
+import image from "../../assets/images/Gemini_Generated_Image_55t4lf55t4lf55t4~2.png";
 
 function Banner() {
   return (
     <div className="banner-container">
       <div className="hero">
         <div className="hero-content">
-          <div className="hero-left">
-            <img src={image} alt="HelioNux" className="profile-image"/>
-          </div>
           <div className="hero-right">
             <h1 className="hero-text">
               HelioNux
@@ -23,7 +20,7 @@ function Banner() {
               <a href="#projects" className="btn btn-secondary">Voir mes Projets</a>
             </div>
             <div className="social-links">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/helionux" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
               <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
@@ -34,7 +31,11 @@ function Banner() {
               </a>
             </div>
           </div>
+          
         </div>
+        <div className="hero-left">
+            <img src={image} alt="HelioNux" className="profile-image"/>
+          </div>
       </div>
     </div>
   );

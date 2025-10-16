@@ -54,7 +54,9 @@ function Contact() {
               <i className="fas fa-phone"></i>
               <div>
                 <h3>Téléphone</h3>
-                <p>(+235) 62 13 83 52 / (+237) 694 33 60 74</p>
+                <p>(+235) 62 13 83 52 </p>
+                <h3>Whatsapp</h3>
+                <p>(+237) 694 33 60 74</p>
               </div>
             </div>
           </div>
